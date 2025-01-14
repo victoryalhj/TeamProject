@@ -5,9 +5,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    This is master hehe
+
+   <!-- Navbar -->
+      <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img width="32" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOyE-K-43FZ_16IFb9aUbFKSHYpAVmEC-jhw&s" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Schedule</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sports
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Boxing</a></li>
+                    <li><a class="dropdown-item" href="#">NFL Game Pass</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Betting</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Merchandise</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Search</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class="btn btn-outline-success" type="submit">Sign in</button>
+                <button class="btn btn-outline-success btn-second" type="submit">Sign up free</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+   <!-- Main -->
+    <!-- Carousel -->
+    <div class="main">
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.ctfassets.net/vhp9jnid12wf/6jHoDyCst4T1mn8elZMaHv/282c4018b219886995afbeef3a19d66f/New_Project__1_.png?fm=webp&q=50" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.ctfassets.net/vhp9jnid12wf/3rrX0rAMlFmifHWsY0PgX1/5c7c1ab0365d9fd8324598db7f508fdc/1440x755_UniLandPage_DesktopHeroBanner_2x.jpg?fm=webp&q=50" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.ctfassets.net/vhp9jnid12wf/5FG7F0Ku6DibtlPo1xLtjJ/875b6d016a8bec3e3353f5cef555dca3/DAZN_Champions_League_MD2_Platform_Landing_Page_New_Web_Livingroom_Default_2880x1550.jpg?fm=webp&q=50" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Card -->
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-md-2 mt-5 mb-5">
+          <div class="card first-card">
+            <div class="d-flex align-items-center">
+              <img src="https://image.discovery.indazn.com/eu/v4/onboarding-images/none/sn_2x2oqzx60orpoeugkd754ga17/fill/center/top/none/100/0/0/png/image/14" 
+                   class="card-img-top" 
+                   alt="..."
+                   style="width: 100px; height: auto;"></div>
+            <div class="card-body">
+              <p class="card-text">Boxing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-5 mb-5">
+          <div class="card">
+            <img src="https://image.discovery.indazn.com/eu/v4/onboarding-images/none/sn_wy3kluvb4efae1of0d8146c1/fill/center/top/none/100/0/0/png/image/14" class="card-img-top" alt="..." style="width: 100px; height: auto;">
+            <div class="card-body">
+              <p class="card-text">NFL Game Pass</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-5 mb-5">
+          <div class="card">
+            <img src="https://image.discovery.indazn.com/eu/v4/onboarding-images/none/sn_b5udgm9vakjqz8dcmy5b2g0xt/fill/center/top/none/100/0/0/png/image/14" class="card-img-top" alt="..." style="width: 100px; height: auto;">
+            <div class="card-body">
+              <p class="card-text">National League</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-5 mb-5">
+          <div class="card">
+            <img src="https://image.discovery.indazn.com/eu/v4/onboarding-images/none/sn_2wrz2mhsfuouaofn3myivs1xb/fill/center/top/none/100/0/0/png/image/14" class="card-img-top" alt="..." style="width: 100px; height: auto;">
+            <div class="card-body">
+              <p class="card-text">Women's Football</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-5 mb-5">
+          <div class="card">
+            <img src="https://image.discovery.indazn.com/eu/v4/onboarding-images/none/sn_9kn3pow0we2r8hna2p0k4m2ff/fill/center/top/none/100/0/0/png/image/14" class="card-img-top" alt="..." style="width: 100px; height: auto;">
+            <div class="card-body">
+              <p class="card-text">Channes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-5 mb-5">
+          <div class="card">
+            <img src="https://image.discovery.indazn.com/eu/v4/onboarding-images/none/sn_8s11vr2vb4txnrgbzo5yzn295/fill/center/top/none/100/0/0/png/image/14" class="card-img-top" alt="..." style="width: 100px; height: auto;">
+            <div class="card-body">
+              <p class="card-text">Nassar TV</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Live Now -->
+    <div class="container">
+      <div class="row">
+        
+        <h3>Live Now</h3>
+        <div class="col-md-2 mt-2 mb-5">
+          <img src="../image/main-example.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Best of DAZN Live Chaneel</h5>
+            <p class="card-text">Live</p>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-2 mb-5">
+          <img src="../image/main-example2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">NFL Network</h5>
+            <p class="card-text">Live Channel</p>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-2 mb-5">
+          <img src="../image/main-example.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Matchroom Boxing</h5>
+            <p class="card-text">Live Channel</p>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-2 mb-5">
+          <img src="../image/main-example2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Boxing TV</h5>
+            <p class="card-text">Live Channel</p>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-2 mb-5">
+          <img src="../image/main-example.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Red Bull TV: Extreme Sports Channel</h5>
+            <p class="card-text">Live Channel</p>
+          </div>
+        </div>
+
+        <div class="col-md-2 mt-2 mb-5">
+          <img src="../image/main-example2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Unbeaten:24/7 Global Sports Channel</h5>
+            <p class="card-text">Live Channel</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Upcoming Fights -->
+      <div class="container">
+        <div class="row">
+            
+          <h3>Upcoming Fights</h3>
+            <div class="col-md-2 mt-2 mb-5">
+              <img src="../image/main-fights.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">X Series 20; dARREN tILL VS. anthony Taylor</h5>
+                <p class="card-text">MF &DAZN: X Series 20</p>
+              </div>
+            </div>
+    
+            <div class="col-md-2 mt-2 mb-5">
+              <img src="../image/main-fights.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bet on Boxing at DAZNBet.com</h5>
+                <p class="card-text">Bet With DAZN Bet</p>
+              </div>
+            </div>
+    
+            <div class="col-md-2 mt-2 mb-5">
+              <img src="../image/main-fights.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kurdanov vs. Brito</h5>
+                <p class="card-text">BKFX Pechange</p>
+              </div>
+            </div>
+    
+            <div class="col-md-2 mt-2 mb-5">
+              <img src="../image/main-fights.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Priest vs. Howard</h5>
+                <p class="card-text">Golden Boy Promotions</p>
+              </div>
+            </div>
+    
+            <div class="col-md-2 mt-2 mb-5">
+              <img src="../image/main-fights.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smith vs. Ouizza</h5>
+                <p class="card-text">Matchroom Boxing</p>
+              </div>
+            </div>
+    
+            <div class="col-md-2 mt-2 mb-5">
+              <img src="../image/main-fights.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pacheco vs. Nelson</h5>
+                <p class="card-text">Matchroom Boxing</p>
+              </div>
+            </div>
+    
+        </div>
+      </div>
+
+
+     
+      
+
+  </div>
+      <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
