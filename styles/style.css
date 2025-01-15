@@ -12,7 +12,7 @@
 }
 .btn {
   border: none;
-  background-color: #3D4549;
+  background-color: #3d4549;
   color: white;
   margin: 0.2rem;
   font-size: 14px;
@@ -24,7 +24,8 @@
 }
 
 /* main */
-.main, .card-body {
+.main,
+.card-body {
   background-color: black;
 }
 
@@ -42,6 +43,126 @@ h3 {
   color: white;
   font-weight: 700;
 }
-.card-text, .card-title {
+.card-text,
+.card-title {
   color: white;
+  text-decoration: none;
+}
+
+/*previous events*/
+.prev-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 150%;
+  border-radius: 15px;
+}
+.prev-img:hover {
+  transform: scale(1.09);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.prev-event-img1 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/107ce84e-fce7-4900-9435-3f04e9ff8610/fill/none/top/none/49/668/1002/webp/image');
+}
+
+.prev-event-img2 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/48f9514a-cc98-4cf1-838a-67566b39c76d/fill/none/top/none/49/668/1002/webp/image');
+}
+
+.prev-event-img3 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/c8c3f326-e778-4555-810e-bc7acaee29fa/fill/none/top/none/49/668/1002/webp/image');
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.prev-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.prev-title {
+  text-align: left;
+}
+.prev-btn-contain {
+  display: flex;
+}
+
+.prev-btn-contain .carousel-control-prev,
+.prev-btn-contain .carousel-control-next {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  background-color: rgba(173, 169, 169, 0.715);
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prev-btn-contain .carousel-control-prev:hover,
+.prev-btn-contain .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.309);
+  transform: scale(1.05);
+}
+.prev-btn-contain .carousel-control-prev {
+  margin-right: 10px;
+}
+.prev-btn-contain .carousel-control-prev-icon,
+.prev-btn-contain .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+}
+
+/* top sport */
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #9c0c0c95; /* 스크롤바 색상 */
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f0f0f000; /* 스크롤바 배경 */
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 7rem;
+}
+
+.top-sport-img {
+  background-size: contain;
+  background-position: center;
+  padding-top: 100%;
+  border-radius: 15px;
+}
+.top-sport-img1 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/a4525262-877e-49cb-b5f0-b36edfa9ae13/fill/none/top/none/49/400/400/webp/image');
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 10px;
+  margin: 0;
+  color: #fff;
 }
