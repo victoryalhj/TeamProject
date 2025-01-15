@@ -28,7 +28,66 @@
   background-color: black;
 }
 
+/* Carousel */
+.carousel-item {
+  height: 460px;
+  position: relative;
+}
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* 아래로부터 위로 점점 투명해지는 그라데이션 */
+  z-index: 1;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0,-50%);
+  text-align: left;
+  width: 30rem;
+  padding-left: 20px;
+}
+.carousel-caption button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.carousel-caption h1 {
+  font-weight: 700;
+}
+
 /* Card */
+.first-section {
+  display: flex;
+}
+.brand-logo {
+  margin: 0.1rem;
+  margin-top: 5rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  height: 100px;
+  color: white;
+  justify-content: center;
+  padding: 0;
+  background-image: linear-gradient( rgb(40, 37, 37), rgb(9, 8, 8));
+  align-items: center;
+}
+.brand-logo img {
+  height: 50px;
+  width: auto;
+}
+.brand-logo p {
+  margin: 0;
+  padding-left: 5px;
+}
 .card {
   color: white;
   background-color: black;
