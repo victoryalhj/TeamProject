@@ -70,10 +70,40 @@ body {
 .custom_btn {
   background-color: #333331;
   border: #333331 1px solid;
+  height: 4.5rem;
+  width: 14rem;
+  font-size: 0.5 rem;
+  margin:1.5rem;
 }
 
 .interview_image{
   width: 100%; 
   height: 100%; 
   object-fit: cover;
+}
+
+/*가운데 인터뷰*/
+
+
+.interview_custom{
+  background-color: black;
+  color: white;
+  border: black  solid;
+  padding-left: 10rem;
+  aspect-ratio: 16/9
+  
+}
+
+
+.interview_custom_btn{
+  background-color: white;
+  color: black;
+  margin-bottom: 3rem;
+  width: 10rem;
+
+}
+
+.interview_custom_btn:hover{
+  background-color: grey;
+  margin-top:1.5rem;
 }
