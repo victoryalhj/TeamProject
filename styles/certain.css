@@ -1,0 +1,72 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  
+  .carousel-item img {
+    width: 100vw;
+    /* 화면 너비 */
+    height: 70vh;
+    /* 화면 높이의 70% */
+    object-fit: cover;
+    /* 비율 유지하며 요소 채움 */
+    object-position: center;
+    /*이미지 중앙 정렬*/
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    padding-left: 15%; 
+  }
+  
+  
+  .text-content button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+  }
+  
+  .text-content button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .text-content button:hover {
+    background-color: grey;
+  }
+  
+  
+  
+  
+  
+  
