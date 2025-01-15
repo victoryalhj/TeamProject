@@ -1,19 +1,25 @@
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: black;
   color: white;
-  margin: 0px;
   padding: 0;
   height: 100vh;
   width: 100vw;
+  margin:0px;
 }
+
+/* nav {
+  padding: 2rem;
+  position: fixed;
+  background-color: #787878;
+} */
 
 
 .carousel-item img {
   width: 100vw;
   /* 화면 너비 */
-  height: 70vh;
-  /* 화면 높이의 70% */
+  height: 100vh;
   object-fit: cover;
   /* 비율 유지하며 요소 채움 */
   object-position: center;
@@ -51,7 +57,7 @@ body {
   margin: 10px 0 20px 0;
 }
 
-.text-content button {
+ .text-content button {
   padding: 1rem 2rem;
   font-size: 1rem;
   color: white;
@@ -59,11 +65,13 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} 
 
 .text-content button:hover {
   background-color: grey;
 }
+
+
 
 
 /*가운데 버튼*/
@@ -83,13 +91,11 @@ body {
 }
 
 /*가운데 인터뷰*/
-
-
 .interview_custom{
   background-color: black;
   color: white;
   border: black  solid;
-  padding-left: 10rem;
+  padding-left: 5rem;
   aspect-ratio: 16/9
   
 }
@@ -106,4 +112,35 @@ body {
 .interview_custom_btn:hover{
   background-color: grey;
   margin-top:1.5rem;
+}
+
+
+/*카드 이미지들*/
+
+.custom_below_interview{
+  margin-top: 2rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  
+}
+
+.card-img-top {
+  width: 100%;
+  /* 카드 너비에 맞춤 */
+  aspect-ratio: 16 / 9;
+  /* 가로:세로 비율 유지 */
+  object-fit: cover;
+  /* 이미지 비율 유지하며 잘 맞추기 */
+}
+
+.card {
+  height: 100%;
+  /* 카드가 내용물에 따라 높이를 자동 조정 */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
