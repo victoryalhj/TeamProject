@@ -8,13 +8,24 @@ heartButtons.forEach((button) => {
     const icon = button.querySelector('i');
 
     if (icon.classList.contains('fa-heart')) {
-      // 기존 아이콘을 채워진 하트로 변경
       icon.classList.remove('fa-regular');
       icon.classList.add('fa-solid');
     } else {
-      // 채워진 하트를 기존 아이콘으로 변경
       icon.classList.remove('fa-solid');
       icon.classList.add('fa-regular');
     }
   });
+});
+
+const closeButton = document.getElementById('closeButton');
+const footerArea = document.getElementById('footerArea');
+
+closeButton.addEventListener('click', () => {
+  if (footerArea.classList.contains('hidden')) {
+    footerArea.classList.remove('hidden');
+    footerArea.classList.add('visible');
+  } else {
+    footerArea.classList.remove('visible');
+    footerArea.classList.add('hidden');
+  }
 });

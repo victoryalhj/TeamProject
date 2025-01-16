@@ -71,7 +71,7 @@ h4 {
   border-radius: 15px;
 }
 .prev-img:hover {
-  transform: scale(1.09);
+  transform: v
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .prev-event-img1 {
@@ -298,6 +298,7 @@ h4 {
   background-size: contain;
   margin-right: 7rem;
   margin-bottom: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .heart {
@@ -421,4 +422,117 @@ footer span {
   background-color: #535354;
   border-radius: 50%;
   padding: 10px;
+}
+
+/* new footer */
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #a12bc5, #4a82ff);
+  color: white;
+
+  padding: 20px 30px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  right: 60px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.signup-btn:hover {
+  transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.visible {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.close-btn-area {
+  /* padding: 0px 5px; */
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .signup-btn {
+  display: none;
+  }
+}
+
+/* background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/2…abd6c9b/fill/none/top/none/49/668/1002/webp/image'); */
+
+/* .interview .card-text:hover {
+  box-shadow: 0px 1px 7px 2px rgba(255, 255, 255, 0.5) !important;
+} */
+
+.ticket-img {
+  background-size: cover; /* 이미지를 요소 크기에 맞게 채우기 */
+  background-position: center; /* 이미지를 중앙에 위치 */
+  position: relative; /* 위치 설정 */
+  width: 300px; /* 고정 너비 */
+  margin: 5px;
+  height: 200px; /* 고정 높이 */
+  border-radius: 15px; /* 모서리를 둥글게 */
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/2b65ab3d-3cc1-454d-a131-37d55abd6c9b/fill/none/top/none/49/668/1002/webp/image');
+}
+
+.ticket-area {
+  text-align: center;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #ffffff1c !important;
+  color: white;
+}
+.ticket-area:hover{
+  box-shadow: 0px 1px 7px 2px rgba(255, 255, 255, 0.5) !important;
+}
+.ticket-area h5{
+  padding-top:0.5rem;
+}
+.buy-ticket {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.buy-ticket:hover{
+  transform: scale(1.05);
+}
+.ticket-card {
+  margin: 0px;
 }
