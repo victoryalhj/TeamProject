@@ -1,19 +1,18 @@
-
-body {
+ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: black;
   color: white;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  margin:0px !important;
-}
 
-/* nav {
-  padding: 2rem;
-  position: fixed;
-  background-color: #787878;
-} */
+  margin-right:0px !important;
+  object-fit: cover;
+  /* 비율 유지하며 요소 채움 */
+  object-position: center;
+
+
+}
 
 
 .carousel-item img {
@@ -46,26 +45,18 @@ body {
   cursor: pointer;
 }
 
-
 .text-content h1 {
   font-size: 2.5rem;
   margin: 0;
+  color:black;
 }
 
 .text-content p {
   font-size: 1.2rem;
   margin: 10px 0 20px 0;
+  color:black;
 }
 
- .text-content button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} 
 
 .text-content button:hover {
   background-color: grey;
@@ -73,32 +64,40 @@ body {
 
 
 
-
 /*가운데 버튼*/
 .custom_btn {
   background-color: #333331;
   border: #333331 1px solid;
-  height: 4.5rem;
-  width: 14rem;
+  height: 2.5rem;
+  width: 10rem;
   font-size: 0.5 rem;
   margin:1.5rem;
 }
 
+.custom_btn a {
+  color:white;
+   text-decoration: none;
+}
+
+
+
+
+
+/*가운데 인터뷰*/
 .interview_image{
   width: 100%; 
   height: 100%; 
   object-fit: cover;
 }
 
-/*가운데 인터뷰*/
 .interview_custom{
   background-color: black;
   color: white;
   border: black  solid;
   padding-left: 5rem;
   aspect-ratio: 16/9
-  
 }
+
 
 
 .interview_custom_btn{
@@ -115,21 +114,18 @@ body {
 }
 
 
+
+
 /*카드 이미지들*/
-
-.custom_below_interview{
-  margin-top: 2rem;
-  margin-left: 12rem;
-  margin-right: 12rem;
-  
-}
-
 .card-img-top {
   width: 100%;
   /* 카드 너비에 맞춤 */
   aspect-ratio: 16 / 9;
   /* 가로:세로 비율 유지 */
+ 
   object-fit: cover;
+  padding-left: 2rem;
+  padding-right: 2rem;
   /* 이미지 비율 유지하며 잘 맞추기 */
 }
 
@@ -144,3 +140,51 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+/*navar*/
+/* Navbar */
+.navbar {
+  padding: 0;
+  display: fixed;
+}
+.container-fluid {
+  background-color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.btn {
+  border: none;
+  background-color: #3D4549;
+  color: white;
+  margin: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-second {
+  background-color: #f9fafa;
+  color: black;
+}
+
+
+/*footer*/
+.footer-second {
+  display: space-between;
+}
+footer span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown-toggle {
+  background-color: black;
+}
+.list-inline-item a {
+  text-decoration: none;
+  color: white;
+}
+
