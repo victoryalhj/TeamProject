@@ -352,7 +352,7 @@ h4 {
 }
 .footer-first {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer-second {
@@ -362,6 +362,8 @@ h4 {
 .footer-third {
   display: flex;
   justify-content: center;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.362);
 }
 
 footer span {
@@ -379,7 +381,8 @@ footer span {
 
 .footer-first .dropup .btn-secondary {
   position: relative;
-  top: -5px;
+  top: -7px;
+  left: -5px;
 }
 
 .dropdown-menu {
@@ -393,4 +396,29 @@ footer span {
 .dropdown-item:hover {
   background-color: rgba(43, 42, 42, 0.723) !important;
   color: rgba(255, 255, 255, 0.761) !important;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer-first1 {
+  display: flex;
+  flex-direction: row;
+}
+.footer-first1 i {
+  padding-right: 8px;
+  padding-top: 3px;
+}
+.social-media {
+  color: white;
+}
+.social-media i {
+  padding-right: 8px;
+  padding: 10px;
+}
+
+.social-media i:hover {
+  background-color: #535354;
+  border-radius: 50%;
+  padding: 10px;
 }
