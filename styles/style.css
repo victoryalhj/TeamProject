@@ -1,3 +1,4 @@
+/* -------------------------------------------  Heejung ------------------------------------------- */
 /* Navbar */
 .navbar {
   padding: 0;
@@ -29,7 +30,68 @@
   background-color: black;
 }
 
+/* Carousel */
+.carousel-item {
+  height: 460px;
+  position: relative;
+}
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0,-50%);
+  text-align: left;
+  width: 30rem;
+  padding-left: 20px;
+}
+.carousel-caption button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.carousel-caption h1 {
+  font-weight: 700;
+}
+
 /* Card */
+.first-section {
+  display: flex;
+}
+.brand-logo {
+  margin: 0.1rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  display: flex;
+  height: 100px;
+  color: white;
+  justify-content: center;
+  padding: 0;
+  background-image: linear-gradient( rgb(40, 37, 37), rgb(9, 8, 8));
+  align-items: center;
+}
+.brand-logo img {
+  height: 1.5rem;
+  width: auto;
+}
+.brand-logo p {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
 .card {
   color: white;
   background-color: black;
@@ -43,11 +105,77 @@ h3 {
   color: white;
   font-weight: 700;
 }
-.card-text,
-.card-title {
+.card-body {
+  margin-top: 1rem;
+}
+.card-body .card-title {
   color: white;
   text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
 }
+.card-body .card-text {
+  color: grey;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+/* Promotion */
+.container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.promotion-gamepass {
+  display: flex;
+}
+.promotion-gamepass img {
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: transform 0.8s ease-in-out;
+}
+.promotion-gamepass img:hover {
+  transform: scale(1.1);
+
+}
+.promotion-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 5rem;
+}
+.promotion-text-title {
+  font-size: 1rem;
+  color: grey;
+}
+.promotion-text-title-bold {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+.promotion-text button {
+  width: 9rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .first-section {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .first-section {
+    display: none;
+  }
+}
+
 
 /* -------------------------------------------  Sojung ------------------------------------------- */
 a {
@@ -71,7 +199,7 @@ h4 {
   border-radius: 15px;
 }
 .prev-img:hover {
-  transform: v
+  transform: scale(1.05);
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .prev-event-img1 {
