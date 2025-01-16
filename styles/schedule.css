@@ -12,7 +12,7 @@
 }
 .btn {
   border: none;
-  background-color: #3D4549;
+  background-color: #3d4549;
   color: white;
   margin: 0.2rem;
   font-size: 14px;
@@ -24,65 +24,69 @@
 }
 
 .container {
-    display: flex;               
-    justify-content: center;    
-    align-items: center;        
-    padding: 1 2em;
-    margin-top: 2.5em;
-  }
-  
-  /* Schedule */
-  .date-container {
-    display: flex;               /* date-container도 flexbox로 설정 */
-    flex-direction: column;      
-    align-items: center;      
-    font-weight: 800;   
-    text-align: center;
-    margin-left: 2em;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1 2em;
+  margin-top: 2.5em;
+}
 
-  .game-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .game-info {
-    margin: 0 3em;      
-    display: flex;
-    white-space: nowrap;
-    gap: 15px;
-    scroll-behavior: smooth;
-    overflow: hidden;
-  }
+/* Schedule */
+.date-container {
+  display: flex; /* date-container도 flexbox로 설정 */
+  flex-direction: column;
+  align-items: center;
+  font-weight: 800;
+  text-align: center;
+  margin-left: 2em;
+}
 
-  .date {
-    font-size: 2em;
-  }
+.game-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .game-schedule {
-    margin-right: 2em;
-    text-align: center;
-  }
+.game-info {
+  margin: 0 3em;
+  display: flex;
+  white-space: nowrap;
+  gap: 15px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
 
-  .scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .left {
-    left: 10px;
-  }
-  
-  .right {
-    right: 10px;
-  }
+.date {
+  font-size: 2em;
+}
+
+.game-schedule {
+  margin-right: 2em;
+  text-align: center;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.right2 {
+  right: 10px;
+}
