@@ -1,0 +1,47 @@
+/* Navbar */
+.navbar {
+  padding: 0;
+  display: fixed;
+}
+.container-fluid {
+  background-color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.btn {
+  border: none;
+  background-color: #3D4549;
+  color: white;
+  margin: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-second {
+  background-color: #f9fafa;
+  color: black;
+}
+
+/* main */
+.main, .card-body {
+  background-color: black;
+}
+
+/* Card */
+.card {
+  color: white;
+  background-color: black;
+}
+.card-img-top {
+  border-radius: 5px;
+}
+
+/* Live Now */
+h3 {
+  color: white;
+  font-weight: 700;
+}
+.card-text, .card-title {
+  color: white;
+}
