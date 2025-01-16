@@ -12,7 +12,7 @@
 }
 .btn {
   border: none;
-  background-color: #3D4549;
+  background-color: #3d4549;
   color: white;
   margin: 0.2rem;
   font-size: 14px;
@@ -24,7 +24,8 @@
 }
 
 /* main */
-.main, .card-body {
+.main,
+.card-body {
   background-color: black;
 }
 
@@ -42,6 +43,220 @@ h3 {
   color: white;
   font-weight: 700;
 }
-.card-text, .card-title {
+.card-text,
+.card-title {
+  color: white;
+  text-decoration: none;
+}
+
+/*previous events*/
+.prev-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 150%;
+  border-radius: 15px;
+}
+.prev-img:hover {
+  transform: scale(1.09);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.prev-event-img1 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/107ce84e-fce7-4900-9435-3f04e9ff8610/fill/none/top/none/49/668/1002/webp/image');
+}
+
+.prev-event-img2 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/48f9514a-cc98-4cf1-838a-67566b39c76d/fill/none/top/none/49/668/1002/webp/image');
+}
+
+.prev-event-img3 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/c8c3f326-e778-4555-810e-bc7acaee29fa/fill/none/top/none/49/668/1002/webp/image');
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.prev-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.prev-title {
+  text-align: left;
+}
+.prev-btn-contain {
+  display: flex;
+}
+
+.prev-btn-contain .carousel-control-prev,
+.prev-btn-contain .carousel-control-next {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  background-color: rgba(173, 169, 169, 0.715);
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prev-btn-contain .carousel-control-prev:hover,
+.prev-btn-contain .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.309);
+  transform: scale(1.05);
+}
+.prev-btn-contain .carousel-control-prev {
+  margin-right: 10px;
+}
+.prev-btn-contain .carousel-control-prev-icon,
+.prev-btn-contain .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+}
+
+/* top sport */
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #9c0c0c95; /* 스크롤바 색상 */
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f0f0f000; /* 스크롤바 배경 */
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 7rem;
+}
+
+.top-sport-img {
+  background-size: contain;
+  background-position: center;
+  padding-top: 100%;
+  border-radius: 15px;
+}
+.top-sport-img1 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/a4525262-877e-49cb-b5f0-b36edfa9ae13/fill/none/top/none/49/400/400/webp/image');
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 10px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Interview,news */
+.interview-contain {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 10px 0px;
+}
+
+.show-all {
+  background-color: transparent;
+  color: black;
+  background-color: rgba(173, 169, 169, 0.385);
+  border: 1px solid rgba(146, 141, 141, 0.077);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 35px;
+  padding: 3px 10px;
+}
+
+.show-all:hover {
+  background-color: rgba(255, 255, 255, 0.309) !important;
+  transform: scale(1.09) !important;
+}
+
+@media (max-width: 768px) {
+  .show-all .button-text {
+    display: none; /* 텍스트 숨기기 */
+  }
+  .show-all .button-icon {
+    display: inline-block; /* 아이콘 보이기 */
+  }
+}
+.interview-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resize-img {
+  width: 25rem;
+  height: 13rem;
+  border-radius: 0%;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.interview-img {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1d4g92be2np4213bc6hqeqq9bj_image-header_pRow_1735570739000/fill/none/top/none/49/668/374/webp/image');
+}
+.position-relative {
+  position: relative; /* 부모 요소를 기준으로 위치 설정 */
+}
+
+.circle-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.947);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.circle-overlay i {
+  font-size: 20px;
+  color: black;
+}
+
+.circle-overlay:hover {
+  background-color: rgba(255, 255, 255, 0.489);
+}
+
+.list-inline-item {
+  font-weight: 200;
+  font-size: 16px;
+}
+.footer-second {
+  display: space-between;
+}
+footer span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown-toggle {
+  background-color: black;
+}
+.list-inline-item a {
+  text-decoration: none;
   color: white;
 }
