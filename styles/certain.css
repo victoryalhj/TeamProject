@@ -1,4 +1,4 @@
- body {
+body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: black;
   color: white;
@@ -10,7 +10,6 @@
   object-fit: cover;
   /* 비율 유지하며 요소 채움 */
   object-position: center;
-
 
 }
 
@@ -72,12 +71,15 @@
   width: 10rem;
   font-size: 0.5 rem;
   margin:1.5rem;
+  
 }
 
 .custom_btn a {
   color:white;
    text-decoration: none;
+   letter-spacing: 0.03rem;
 }
+
 
 
 
@@ -93,24 +95,48 @@
 .interview_custom{
   background-color: black;
   color: white;
-  border: black  solid;
-  padding-left: 5rem;
-  aspect-ratio: 16/9
+  aspect-ratio: 16/9;
 }
+ @media (min-width: 1700px){
+  .interview_custom{
+    background-color: black;
+    color: white;
+    aspect-ratio: 16/9;
+    margin-left: -10rem;
+  }  
+} 
 
 
+.interview_custom_text{
+  background-color: black;
+  color: white;
+  text-align: left;
+  aspect-ratio: 16/9;
+}
 
 .interview_custom_btn{
   background-color: white;
   color: black;
   margin-bottom: 3rem;
   width: 10rem;
-
 }
+
+
 
 .interview_custom_btn:hover{
   background-color: grey;
   margin-top:1.5rem;
+}
+
+#videoContainer, #videoContainer2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* 배경을 어두운 색으로 설정 */
+  display: none;
+  z-index: 9999; /* 화면 위에 표시되도록 설정 */
 }
 
 
@@ -124,8 +150,8 @@
   /* 가로:세로 비율 유지 */
  
   object-fit: cover;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   /* 이미지 비율 유지하며 잘 맞추기 */
 }
 
@@ -170,6 +196,10 @@
   color: black;
 }
 
+.custom_below_interview{
+  margin-left:5rem;
+  margin-right:4rem;
+}
 
 /*footer*/
 .footer-second {
