@@ -153,11 +153,13 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   /* 이미지 비율 유지하며 잘 맞추기 */
+  border-radius: 10%;
 }
 
 .card {
   height: 100%;
   /* 카드가 내용물에 따라 높이를 자동 조정 */
+
 }
 
 .card-body {
@@ -165,6 +167,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -201,10 +204,46 @@ body {
   margin-right:4rem;
 }
 
-/*footer*/
+/* Footer */
+
+@media (max-width: 900px) {
+  .footer-first {
+    justify-content: space-between !important;
+  }
+  .mid {
+    display: none;
+  }
+}
+.list-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-second li {
+  padding: 10px;
+}
+.footer-second li:hover {
+  text-decoration: underline;
+}
+.dropdown-toggle {
+  padding-bottom: 10px;
+}
+.footer-first {
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer-second {
   display: space-between;
 }
+
+.footer-third {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.362);
+}
+
 footer span {
   padding-left: 10px;
   padding-right: 10px;
@@ -218,3 +257,113 @@ footer span {
   color: white;
 }
 
+.footer-first .dropup .btn-secondary {
+  position: relative;
+  top: -7px;
+  left: -5px;
+}
+
+.dropdown-menu {
+  background-color: rgb(20, 20, 20) !important;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.761) !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(43, 42, 42, 0.723) !important;
+  color: rgba(255, 255, 255, 0.761) !important;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer-first1 {
+  display: flex;
+  flex-direction: row;
+}
+.footer-first1 i {
+  padding-right: 8px;
+  padding-top: 3px;
+}
+.social-media {
+  color: white;
+}
+.social-media i {
+  padding-right: 8px;
+  padding: 10px;
+}
+
+.social-media i:hover {
+  background-color: #535354;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* New footer */
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #a12bc5, #4a82ff);
+  color: white;
+  padding: 20px 30px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  right: 60px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.signup-btn:hover {
+  transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.visible {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.close-btn-area {
+  /* padding: 0px 5px; */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .signup-btn {
+    display: none;
+  }
+}
