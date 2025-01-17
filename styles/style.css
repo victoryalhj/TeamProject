@@ -214,6 +214,19 @@ h3 {
   background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/c8c3f326-e778-4555-810e-bc7acaee29fa/fill/none/top/none/49/668/1002/webp/image');
 }
 
+.prev-event-img4 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/c3a8dbad-7864-4fdc-9ec1-bab8513db28b/fill/none/top/none/49/668/1002/webp/image');
+}
+.prev-event-img5 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/a29abe56-5e4e-4e55-a7d9-fc4ad1fffd4a/fill/none/top/none/49/668/1002/webp/image');
+}
+.prev-event-img6 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/6b7f2479-24c8-4b2a-a1c3-d717ac4213f5/fill/none/top/none/49/668/1002/webp/image');
+}
+.prev-event-img7 {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/9f2d7dfb-d01d-4997-a7c8-82fcddcc8fb3/fill/none/top/none/49/668/1002/webp/image');
+}
+
 .prev-btn {
   display: flex;
   justify-content: space-between;
@@ -397,6 +410,10 @@ a {
   width: 100%;
   padding-right: 15px;
   object-fit: contain;
+}
+
+.resize-img:hover {
+  transform: scale(1.03);
 }
 .boxing-p {
   padding: 0px;
