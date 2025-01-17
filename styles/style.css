@@ -5,7 +5,7 @@
   display: fixed;
 }
 .nav-link:hover {
-  color: yellow;
+  color: yellow !important;
 }
 
 .container-fluid {
