@@ -12,7 +12,7 @@
 }
 .btn {
   border: none;
-  background-color: #3d4549;
+  background-color: #3D4549;
   color: white;
   margin: 0.2rem;
   font-size: 14px;
@@ -24,65 +24,152 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1 2em;
-  margin-top: 2.5em;
-}
+    display: flex;                 
+    align-items: center;        
+    padding: 1 2em;
+    margin-top: 2.5em;
+  }
+  
+  /* Schedule */
 
-/* Schedule */
-.date-container {
-  display: flex; /* date-container도 flexbox로 설정 */
-  flex-direction: column;
-  align-items: center;
-  font-weight: 800;
-  text-align: center;
-  margin-left: 2em;
-}
+  body {
+    background-color: rgba(0, 0, 0, 0.97);
+    color: white;
+  }
 
-.game-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
+  .date-container {
+    display: flex;               /* date-container도 flexbox로 설정 */
+    flex-direction: column;  
+    font-weight: 800;   
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
 
-.game-info {
-  margin: 0 3em;
-  display: flex;
-  white-space: nowrap;
-  gap: 15px;
-  scroll-behavior: smooth;
-  overflow: hidden;
-}
+  .game-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .game-info {
+    margin: 0 3em;      
+    display: flex;
+    white-space: nowrap;
+    gap: 15px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
 
-.date {
-  font-size: 2em;
-}
+  
+  .game-schedule-monday {
+    margin-left: 2.5em;
+    text-align: center;
+  }
 
-.game-schedule {
-  margin-right: 2em;
-  text-align: center;
-}
+  .date {
+    font-size: 2em;
+  }
 
-.scroll-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
+  .game-schedule {
+    margin-right: 2em;
+    text-align: center;
+  }
 
-.left {
-  left: 10px;
-}
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+ 
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
 
-.right {
-  right: 10px;
-}
+  .footer-second {
+    display: space-between;
+  }
+  footer span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .dropdown-toggle {
+    background-color: black;
+  }
+  .list-inline-item a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .schedule-button-style {
+    text-align: center;
+    padding: 2em;
+  }
+
+
+  .schedule-button-style {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 3px double rgba(255, 255, 255, 0.281);
+    border-top: 3px double rgba(255, 255, 255, 0.281);
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    background-color: rgba(255, 255, 255, 0); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0; 
+    justify-content: center;
+    width: 100%;
+  }
+
+    .schedule-button-design {
+      display: flex;
+      align-items: center; 
+      background-color: #1d2024; 
+      color: white; 
+      border: none; 
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 8px; 
+      cursor: pointer; 
+      transition: background-color 0.3s, transform 0.3s ease;
+    }
+
+    .schedule-button-design i {
+      margin-right: 5px;
+      font-size: 15px; 
+    }
+
+    .schedule-button-design:hover {
+      background-color: #272e35; 
+      transform: translateY(-3px); 
+    }
+
+    @media (max-width: 768px) {
+      .schedule-button-style {
+          justify-content: space-around; 
+      }
+
+      .schedule-button-design {
+          padding: 8px 16px; 
+          font-size: 14px;
+      }
+    }
