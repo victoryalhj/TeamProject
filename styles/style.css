@@ -30,7 +30,9 @@
   background-color: #f9fafa;
   color: black;
 }
-
+.img {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1…51043000/fill/none/top/none/49/668/374/webp/image');
+}
 /* main */
 .main,
 .card-body {
