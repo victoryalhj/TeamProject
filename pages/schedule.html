@@ -10,7 +10,8 @@
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
-  />
+     />
+    <script src="https://kit.fontawesome.com/0df7cf1108.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../styles/schedule.css" />
   </head>
@@ -73,9 +74,33 @@
         </div>
       </nav>
       
-      <!-- schedule main -->>
-      
-    <main>
+      <!-- schedule main -->
+   
+        <div class="schedule-button-style">
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-bars"></i>
+            All Sports </button>
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-football"></i>
+            NFL Game Pass </button>
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-futbol"></i>
+            Soccer </button>
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-baseball"></i>
+              Baseball </button>
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-clover"></i>
+            National League </button>
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-football"></i>
+            Football </button>
+          <button class="schedule-button-design"> 
+            <i class="fa-solid fa-clover"></i>
+              Tennis </button>
+       </div>
+
+
       <div class="container">
         <div class="date-container">
           <div>SUN</div>
@@ -84,58 +109,9 @@
         </div>
 
           <!-- Sunday-->
-        <div class="game-info-container" id="game-info-container-sunday">
+        <div class="game-info-container">
           <button class="scroll-btn left" onclick="scrollLeftHandler('sunday')">&#10094;</button>
-          <div class="game-info">
-            <div class="game-schedule">
-              <div> 03:00 </div>
-              <img
-                src="https://www.moroccoworldnews.com/wp-content/uploads/2014/11/eibar-vs-real-madrid-2014-2015.jpg"
-                width="250px" height="150px" />
-              <div>Real Madrid vs. Eibar</div>
-              <div>Liga F</div>
-            </div>
-
-            <div class="game-schedule">
-              <div>08:30 </div>
-              <img
-                src="https://image.discovery.indazn.com/ca/v2/ca/image?id=eh4vcxhmr41zbelijq29cua9r_image-header_pCa_1733215024000"
-                width="250px" height="150px" />
-              <div>Werder Bremen vs. Augusburg</div>
-              <div>Bundesliga</div>
-            </div>
-
-            <div class="game-schedule">
-              <div> 09:30 </div>
-              <img
-                src="https://image.discovery.indazn.com/ca/v2/ca/image?id=8yv6ym5c9czwahmjna9r9zta4_image-header_pUs_1735655508000&quality=70"
-                width="250px" height="150px" />
-              <div> Cheshire Phoenix vs. Newcastle Eagles </div>
-              <div> Super League Basketball </div>
-            </div>
-           
-
-            <div class="game-schedule">
-              <div> 12:00 </div>
-              <img
-                src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2025-01/Divisional%20Eagles-Rams.jpg?itok=Pfe430ik"
-                width="250px" height="150px" />
-              <div>Rams @ Eagles </div>
-              <div>East Asia Super League</div>
-            </div>
-
-            <div class="game-schedule">
-              <div> 15:30 </div>
-              <img
-                src="https://www.whec.com/wp-content/uploads/2025/01/BILLS-VS-RAVENS.png"
-                width="250px" height="150px" />
-              <div>Ravens @ Bills</div>
-              <div>NFL Game Pass</div>
-            </div>
-
-            <div class="game-info-sunday">
-          <button class="scroll-btn left" onclick="scrollLeftHandler('sunday')">&#10094;</button>
-          <div class="game-info">
+          <div class="game-info" id="game-info-container-sunday">
             <div class="game-schedule">
               <div> 03:00 </div>
               <img
@@ -185,9 +161,7 @@
           <button class="scroll-btn right" onclick="scrollRightHandler('sunday')">&#10095;</button>
           </div>
        </div>
-      </div>
-    </div>
-
+ 
        <!-- Monday-->
     <div class="container">
       <div class="date-container">
@@ -196,7 +170,7 @@
         <div>JAN</div>
       </div>
 
-        <div class="game-schedule">
+        <div class="game-schedule-monday">
           <div>09:00 </div>
           <img
             src="https://image.discovery.indazn.com/ca/v2/ca/image?id=7pgd15nydfjsrlubeehetkpq6_image-header_pCa_1736493292000&quality=70"
@@ -227,9 +201,9 @@
         <div>JAN</div>
       </div>
 
-    <div class="game-info-container" id="game-info-container-tuesday">
+    <div class="game-info-container">
       <button class="scroll-btn left" onclick="scrollLeftHandler('tuesday')">&#10094;</button>
-      <div class="game-info">
+      <div class="game-info" id="game-info-container-tuesday">
         <div class="game-schedule">
           <div> 02:10 </div>
           <img
@@ -257,6 +231,16 @@
           <div> UEFA Europa League </div>
         </div>
        
+        <div class="game-schedule">
+          <div> 09:00</div>
+          <img
+            src="https://artwork.espncdn.com/events/401744269/16x9/1280x720_20250107155047.jpg"
+            width="250px" height="150px" />
+          <div> Szombathely vs. </div>
+          <div> Maccabi Ramat Gan </div>
+          <div> Basketball Champions League </div>
+        </div>
+      
 
         <div class="game-schedule">
           <div> 19:45 </div>
@@ -270,14 +254,154 @@
         <button class="scroll-btn right" onclick="scrollRightHandler('tuesday')">&#10095;</button>
       </div>
    </div>
-  </div>
-</div>
 
- 
 
+     <!-- Wednesday -->
+     <div class="container">
+      <div class="date-container">
+        <div>WED</div>
+        <div class="date">22</div>
+        <div>JAN</div>
+      </div>
+
+    <div class="game-info-container">
+      <button class="scroll-btn left" onclick="scrollLeftHandler('wednesday')">&#10094;</button>
+      <div class="game-info" id="game-info-container-wednesday">
+        <div class="game-schedule">
+          <div> 02:10 </div>
+          <img
+            src="https://image.discovery.indazn.com/ca/v2/ca/image?id=1wpj5p5g9xwlp4xfe3m110xg5_image-header_pRow_1732181768000&quality=70"
+            width="250px" height="150px" />
+          <div> Hiroshima Dragonflies </div>
+          <div> vs. Taoyuan Pauian Pilots </div> 
+          <div> East Asia Super League</div>
+        </div>
+
+        <div class="game-schedule">
+          <div> 04:10 </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7J0EFONkyqNscVM5u_ESWusiViBscPE5Rg&s"
+            width="250px" height="150px" />
+          <div> Meralco  Bolts vs. Ryukyu Golden Kings</div>
+          <div> East Asia Super League </div>
+        </div>
+
+        <div class="game-schedule">
+          <div> 07:30</div>
+          <img
+            src="https://image.discovery.indazn.com/ca/v2/ca/image?id=f0j44rhct58904n7exn4szwyi_image-header_pCa_1733386921000"
+            width="250px" height="150px" />
+          <div> Besiktas vs. Athletic Bilbao </div>
+          <div> UEFA Europa League </div>
+        </div>
+       
+
+        <div class="game-schedule">
+          <div> 09:00 </div>
+          <img
+            src="https://image.discovery.indazn.com/ca/v2/ca/image?id=5btt8k47lvl2s83mwcnocx13q_image-header_pCa_1736493320000&quality=70"
+            width="250px" height="150px" />
+          <div> Al Lttihad vs. Al Shabab  </div>
+          <div> Saudi League </div>
+        </div>
+      </div>
+        <button class="scroll-btn right" onclick="scrollRightHandler('wednesday')">&#10095;</button>
+      </div>
+   </div>
+
+   <!-- Thursday -->
+     <div class="container">
+      <div class="date-container">
+        <div>THU</div>
+        <div class="date">23</div>
+        <div>JAN</div>
+      </div>
+
+    <div class="game-info-container">
+      <button class="scroll-btn left" onclick="scrollLeftHandler('thursday')">&#10094;</button>
+      <div class="game-info" id="game-info-container-thursday">
+        <div class="game-schedule">
+          <div>09:00 </div>
+          <img
+            src="https://image.discovery.indazn.com/ca/v2/ca/image?id=3or0ok7m5botksux2bref3hsh_image-header_pRow_1733387289000"
+            width="250px" height="150px" />
+          <div> AZ Alkmaar vs. Roma </div>
+          <div> UEFA Europa League </div>
+        </div>
+
+        <div class="game-schedule">
+          <div> 09:45</div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmj8jObBiuiEmjMPSGPwT-VbMM4WLsjaZLNA&s"
+            width="250px" height="150px" />
+          <div> Porto vs. Olympiacos </div>
+          <div> UEFA Europa League </div>
+        </div>
+
+        <div class="game-schedule">
+          <div> 09:45 </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG5AorSbYV2nE1P1bgwp6XV9CFFwgjde8QZg&s"
+            width="250px" height="150px" />
+          <div> Fenerbache vs. Lyon </div>
+          <div> UEFA Europa League </div>
+        </div>
+       
+
+        <div class="game-schedule">
+          <div> 19:45 </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxu7aiHQf82KP_htj2xR9fNV6CkyarKTtNgw&s"
+            width="250px" height="150px" />
+          <div> atalanta vs. Sturm Graz  </div>
+          <div> UEFA Champions League </div>
+        </div>
+      </div>
+        <button class="scroll-btn right" onclick="scrollRightHandler('thursday')">&#10095;</button>
+      </div>
+   </div>
     </main>
+   
+<footer class="footer pt-5">
+    <div class="container">
+  <div class="text-white d-flex footer-bottom py-3  text-center">
+    South Korea  
+    <span>  |  </span>
+    <div class="dropup">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        English
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-second">
+  <ul class="list-inline text-white">
+    <li class="list-inline-item "><a href="">HELP</a></li>
+    <li class="list-inline-item">TERMS OF USE</li>
+    <li class="list-inline-item">PRIVACY POLICY AND COOKIE NOTICE</li>
+    <li class="list-inline-item">IMPRINT</li>
+    <li class="list-inline-item">PRIVACY POLICY AND COOKIE NOTICE</li>
+    <li class="list-inline-item">NOONA GROUP</li>
+    <li class="list-inline-item">NEWS</li>
+    <li class="list-inline-item">REDEEM</li>
+    <li class="list-inline-item">ABOUT US</li>
+  </ul>
 
-    <footer></footer>
+  </div>
+
+  <div class="d-flex text-white footer-bottom py-3  text-center">Noona</div>
+    </footer>
+    <div class="sign-up-free-footer">
+    </div>
+
+   <footer>
+    
+   </footer>
+
 
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
