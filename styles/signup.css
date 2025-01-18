@@ -1,18 +1,22 @@
 * {
     box-sizing: border-box;
 }
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: #0c161c;
+    background-color: #000;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     min-height: 100vh;
 }
 
+form {
+    margin-bottom: 30px;
+}
 .main-nav {
    
     padding: 12px;
@@ -120,9 +124,9 @@ body {
 .form-check-input {
     appearance: none;
     width: 20px;
-    heigh: 20px; 
-    min-width: 15px;
-    min-height: 15px;   
+    height: auto;
+    min-width: 12px;
+    min-height: 12px;   
     border: 1px solid white;
     background-color: black;
     cursor: pointer;
