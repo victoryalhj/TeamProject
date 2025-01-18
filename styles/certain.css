@@ -170,6 +170,16 @@ body {
   
 }
 
+.custom_comingup{
+  margin-left: 2rem;
+}
+@media screen and max-width(560px) {
+  .custom_comingup{
+    margin-right: 2rem;
+  }
+}
+
+
 
 
 
