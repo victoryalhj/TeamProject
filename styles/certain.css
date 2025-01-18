@@ -79,20 +79,11 @@ body {
   color:white;
    text-decoration: none;
    letter-spacing: 0.02rem;
-<<<<<<< HEAD
-=======
    font-size: 150%;
->>>>>>> 0e638f7bfad6a90cea5424a2bdd9311890a5fef1
 }
 
 
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 0e638f7bfad6a90cea5424a2bdd9311890a5fef1
 /*가운데 인터뷰*/
 .interview_image{
   width: 100%; 
@@ -105,14 +96,6 @@ body {
   color: white;
   aspect-ratio: 16/9;
 }
- @media (min-width: 1700px){
-  .interview_custom{
-    background-color: black;
-    color: white;
-    aspect-ratio: 16/9;
-    margin-left: -10rem;
-  }  
-} 
 
  @media (min-width: 1700px){
   .interview_custom{
@@ -123,12 +106,6 @@ body {
   }  
 } 
 
-.interview_custom_text{
-  background-color: black;
-  color: white;
-  text-align: left;
-  aspect-ratio: 16/9;
-}
 
 .interview_custom_text{
   background-color: black;
@@ -141,15 +118,9 @@ body {
   background-color: white;
   color: black;
   margin-bottom: 3rem;
-<<<<<<< HEAD
-  width: 10rem;
-=======
   width: 12rem;
   height: 4rem;
->>>>>>> 0e638f7bfad6a90cea5424a2bdd9311890a5fef1
 }
-
-
 
 .interview_custom_btn:hover{
   background-color: grey;
@@ -166,10 +137,6 @@ body {
   display: none;
   z-index: 9999; /* 화면 위에 표시되도록 설정 */
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0e638f7bfad6a90cea5424a2bdd9311890a5fef1
 
 
 
@@ -407,8 +374,4 @@ footer span {
   .signup-btn {
     display: none;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0e638f7bfad6a90cea5424a2bdd9311890a5fef1
