@@ -33,6 +33,9 @@ body {
   padding-left: 15%;
 }
 
+.text-content {
+  display: block; /* 항상 표시되도록 설정 */
+}
 
 .text-content button {
   padding: 1rem 2rem;
@@ -56,7 +59,6 @@ body {
   color:black;
 }
 
-
 .text-content button:hover {
   background-color: grey;
 }
@@ -67,9 +69,8 @@ body {
 .custom_btn {
   background-color: #333331;
   border: #333331 1px solid;
-  height: 2.5rem;
-  width: 10rem;
-  font-size: 0.5 rem;
+  height: 3.5rem;
+  width: 15rem;
   margin:1.5rem;
   
 }
@@ -78,10 +79,8 @@ body {
   color:white;
    text-decoration: none;
    letter-spacing: 0.02rem;
+   font-size: 150%;
 }
-
-
-
 
 
 
@@ -97,6 +96,7 @@ body {
   color: white;
   aspect-ratio: 16/9;
 }
+
  @media (min-width: 1700px){
   .interview_custom{
     background-color: black;
@@ -118,10 +118,9 @@ body {
   background-color: white;
   color: black;
   margin-bottom: 3rem;
-  width: 10rem;
+  width: 12rem;
+  height: 4rem;
 }
-
-
 
 .interview_custom_btn:hover{
   background-color: grey;
@@ -138,7 +137,6 @@ body {
   display: none;
   z-index: 9999; /* 화면 위에 표시되도록 설정 */
 }
-
 
 
 
