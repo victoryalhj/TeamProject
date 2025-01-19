@@ -1,13 +1,21 @@
 /* -------------------------------------------  Heejung ------------------------------------------- */
 /* Navbar */
+.login-no {
+ display: none;
+}
 .navbar {
   padding: 0;
-  display: fixed;
+}
+.navbar-brand {
+  font-size: 16px;
+  color: yellow;
+  font-weight: 700;
+  padding: 8px;
+  margin: 0;
 }
 .nav-link:hover {
   color: yellow !important;
 }
-
 .container-fluid {
   height: 60px;
 }
@@ -33,6 +41,16 @@
 .img {
   background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1…51043000/fill/none/top/none/49/668/374/webp/image');
 }
+.main-login {
+  color: white;
+  text-decoration: none;
+}
+.main-signup {
+  color: black;
+  text-decoration: none;
+}
+
+
 /* main */
 .main,
 .card-body {
@@ -137,12 +155,13 @@ h3 {
 }
 .promotion-gamepass {
   display: flex;
+  margin-bottom: 2rem;
 }
 .promotion-gamepass img {
   width: 50%;
   border-radius: 10px;
-  margin-bottom: 2rem;
   transition: transform 0.8s ease-in-out;
+
 }
 .promotion-gamepass img:hover {
   transform: scale(1.1);
@@ -172,15 +191,107 @@ h3 {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
-  .first-section {
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: block !important; /* 강제로 보이게 설정 */
+  }
+  .main-caption {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(0, -50%);
+    text-align: left;
+    width: 10rem;
+    padding-left: 20px;
+  }
+  .main-caption p {
     display: none;
+  }
+  .main-caption button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  .main-caption h1 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .login-no {
+    display: block;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
+  .carousel-item .main-item .active {
+    height: 1rem;
+  }
   .first-section {
     display: none;
+  }
+  .promotion-text-title-bold{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+  #navbarSupportedContent {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .btn-outline-success {
+    display: none;
+  }
+  .promotion-text {
+    margin-left: 5rem;
+  }
+  button.carousel-control-prev,
+  button.carousel-control-next {
+    height: 250px;
+  }
+  .banner-image-text {
+    z-index: 10;
+  }
+  .login-no {
+    display: block;
+  }
+}
+
+@media (max-width: 996px) {
+  .first-section {
+    display: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
+  .carousel-item .main-item .active {
+    height: 1rem;
+  }
+  .first-section {
+    display: none;
+  }
+  .carousel-caption {
+    display: block !important; /* 강제로 보이게 설정 */
+  }
+  .banner-image-text {
+    z-index: 10;
+  }
+  #navbarSupportedContent {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .btn-outline-success { 
+    display: none; /* signup 버튼 안보이게함함 */
+  }
+  .login-no {
+    display: block;
   }
 }
 
