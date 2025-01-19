@@ -1,18 +1,15 @@
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: black;
   color: white;
   padding: 0;
   height: 100vh;
   width: 100vw;
 
-  margin-right:0px !important;
+  margin-right: 0px !important;
   object-fit: cover;
   /* 비율 유지하며 요소 채움 */
   object-position: center;
-
 }
-
 
 .carousel-item img {
   width: 100vw;
@@ -50,20 +47,18 @@ body {
 .text-content h1 {
   font-size: 2.5rem;
   margin: 0;
-  color:black;
+  color: black;
 }
 
 .text-content p {
   font-size: 1.2rem;
   margin: 10px 0 20px 0;
-  color:black;
+  color: black;
 }
 
 .text-content button:hover {
   background-color: grey;
 }
-
-
 
 /*가운데 버튼*/
 .custom_btn {
@@ -71,50 +66,46 @@ body {
   border: #333331 1px solid;
   height: 3.5rem;
   width: 15rem;
-  margin:1.5rem;
-  
+  margin: 1.5rem;
 }
 
 .custom_btn a {
-  color:white;
-   text-decoration: none;
-   letter-spacing: 0.02rem;
-   font-size: 150%;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.02rem;
+  font-size: 150%;
 }
 
-
-
 /*가운데 인터뷰*/
-.interview_image{
-  width: 100%; 
-  height: 100%; 
+.interview_image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.interview_custom{
+.interview_custom {
   background-color: black;
   color: white;
   aspect-ratio: 16/9;
 }
 
- @media (min-width: 1700px){
-  .interview_custom{
+@media (min-width: 1700px) {
+  .interview_custom {
     background-color: black;
     color: white;
     aspect-ratio: 16/9;
     margin-left: -10rem;
-  }  
-} 
+  }
+}
 
-
-.interview_custom_text{
+.interview_custom_text {
   background-color: black;
   color: white;
   text-align: left;
   aspect-ratio: 16/9;
 }
 
-.interview_custom_btn{
+.interview_custom_btn {
   background-color: white;
   color: black;
   margin-bottom: 3rem;
@@ -122,12 +113,13 @@ body {
   height: 4rem;
 }
 
-.interview_custom_btn:hover{
+.interview_custom_btn:hover {
   background-color: grey;
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
 }
 
-#videoContainer, #videoContainer2 {
+#videoContainer,
+#videoContainer2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -138,7 +130,15 @@ body {
   z-index: 9999; /* 화면 위에 표시되도록 설정 */
 }
 
+.container {
+  padding-left: 15px; /* 왼쪽 여백 */
+  padding-right: 15px; /* 오른쪽 여백 */
+}
 
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 /*카드 이미지들*/
 .card-img-top {
@@ -146,7 +146,7 @@ body {
   /* 카드 너비에 맞춤 */
   aspect-ratio: 16 / 9;
   /* 가로:세로 비율 유지 */
- 
+
   object-fit: cover;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -157,7 +157,6 @@ body {
 .card {
   height: 100%;
   /* 카드가 내용물에 따라 높이를 자동 조정 */
-
 }
 
 .card-body {
@@ -165,32 +164,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
-.custom_comingup{
+.custom_comingup {
   margin-left: 2rem;
 }
-@media screen and max-width(560px) {
-  .custom_comingup{
+@media screen and (max-width: 560px) {
+  .custom_comingup {
     margin-right: 2rem;
   }
 }
+.custom_below_interview {
+  margin-left: 10px;
+}
 
-
-
-/*새로운 네브바*/
 /* Navbar */
-.custom_sign_up{
+.custom_sign_up {
   color: white;
   text-decoration: none;
 }
 
- .login-no {
- display: none;
+.login-no {
+  display: none;
 }
 .navbar {
   padding: 0;
+  margin-bottom: 7px;
 }
 .navbar-brand {
   font-size: 1.2rem;
@@ -232,8 +231,7 @@ body {
 .main-signup {
   color: black;
   text-decoration: none;
-}  
-
+}
 
 @media (max-width: 768px) {
   .navbar-toggler-icon {
@@ -245,7 +243,7 @@ body {
   .first-section {
     display: none;
   }
-  .promotion-text-title-bold{
+  .promotion-text-title-bold {
     font-size: 1rem;
     font-weight: 700;
     color: white;
@@ -299,14 +297,13 @@ body {
     padding: 0;
     z-index: 3;
   }
-  .btn-outline-success { 
+  .btn-outline-success {
     display: none; /* signup 버튼 안보이게함함 */
   }
   .login-no {
     display: block;
   }
 }
-
 
 /* Navbar */
 /* .navbar {
@@ -495,9 +492,12 @@ footer span {
   /* padding: 0px 5px; */
   cursor: pointer;
 }
+.navbar-brand {
+  color: yellow !important;
+}
 
 @media (max-width: 768px) {
   .signup-btn {
     display: none;
   }
-} 
+}

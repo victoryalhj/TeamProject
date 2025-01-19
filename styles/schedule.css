@@ -38,61 +38,148 @@
   background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1…51043000/fill/none/top/none/49/668/374/webp/image');
 }
 
-  /* Schedule */
+/* Schedule */
 
-  body {
-    background-color: black;
-    color: white;
-  }
+body {
+  background-color: black;
+  color: white;
+}
 
-  html, body {
-    overflow-x: hidden; 
-    width: 100%;
-  }
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
+.schedule-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.date-container {
+  display: flex; /* date-container도 flexbox로 설정 */
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 800;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.game-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.game-info {
+  margin: 2em 3em;
+  display: flex;
+  white-space: nowrap;
+  gap: 15px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.date {
+  font-size: 2em;
+}
+
+.game-schedule {
+  margin-right: 2em;
+  text-align: center;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.schedule-button-style {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  border-bottom: 3px double rgba(255, 255, 255, 0.281);
+  border-top: 3px double rgba(255, 255, 255, 0.281);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.schedule-button-design {
+  display: flex;
+  align-items: center;
+  background-color: #1d2024;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.schedule-button-design i {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.schedule-button-design:hover {
+  background-color: #272e35;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
   .schedule-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .date-container {
-    display: flex;               /* date-container도 flexbox로 설정 */
-    flex-direction: column;  
-    justify-content: center;
-    font-weight: 800;   
+    width: 95%;
     text-align: center;
-    margin-left: 2em;
-    margin-right: 2em;
   }
 
   .game-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
     overflow: hidden;
   }
-  
+
   .game-info {
-    margin: 2em 3em;      
     display: flex;
-    white-space: nowrap;
-    gap: 15px;
-    scroll-behavior: smooth;
-    overflow: hidden;
-    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+    margin-right: 2px;
   }
 
-
-  .date {
-    font-size: 2em;
+  .game-schedule img {
+    width: 190px;
+    height: auto;
   }
 
   .game-schedule {
-    margin-right: 2em;
     text-align: center;
+    margin: 0 10px;
+    flex-shrink: 0;
   }
 
   .scroll-btn {
@@ -104,150 +191,60 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    font-size: 20px;
   }
- 
-  .left {
-    left: 10px;
+
+  .scroll-btn.left {
+    left: 13px;
   }
-  
-  .right {
-    right: 10px;
+
+  .scroll-btn.right {
+    right: 0px;
   }
 
   .schedule-button-style {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
-    justify-content: center;
-    border-bottom: 3px double rgba(255, 255, 255, 0.281);
-    border-top: 3px double rgba(255, 255, 255, 0.281);
-    position: sticky;
-    top: 0; 
-    z-index: 1000; 
-    background-color: rgba(255, 255, 255, 0); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    padding: 10px 0; 
-    justify-content: center;
-    width: 100vw; 
-    max-width: 100%; 
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: flex-start;
   }
 
-    .schedule-button-design {
-      display: flex;
-      align-items: center; 
-      background-color: #1d2024; 
-      color: white; 
-      border: none; 
-      padding: 10px 20px;
-      font-size: 14px;
-      font-weight: bold;
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s, transform 0.3s ease;
-    }
+  .schedule-button-design {
+    flex: 0 0 auto;
+    padding: 5px 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(40, 38, 38, 0.085);
+  }
 
-    .schedule-button-design i {
-      margin-right: 5px;
-      font-size: 15px; 
-    }
+  .schedule-button-style::-webkit-scrollbar {
+    display: none;
+  }
 
-    .schedule-button-design:hover {
-      background-color: #272e35; 
-      transform: translateY(-3px); 
-    }
+  .schedule-button-style {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
-    @media (max-width: 768px) {
-      .schedule-container {
-        width: 95%;
-        text-align: center;
-      }
-    
-      .game-info-container {
-        overflow: hidden;
-      }
-    
-      .game-info {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        margin-right: 2px;
-      }
-    
-      .game-schedule img {
-        width: 190px;
-        height: auto;
-      }
-    
-      .game-schedule {
-        text-align: center;
-        margin: 0 10px;
-        flex-shrink: 0; 
-      }
-    
-      .scroll-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 20px;
-      }
-    
-      .scroll-btn.left {
-        left: 13px;
-      }
-    
-      .scroll-btn.right {
-        right: 0px;
-      }
+  .navbar-collapse {
+    background-color: black;
+  }
 
-      .schedule-button-style {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding: 10px 0;
-        width: 100%;
-        justify-content: flex-start; 
-      }
-    
-      .schedule-button-design {
-        flex: 0 0 auto; 
-        padding: 5px 10px; 
-        font-size: 16px;
-        white-space: nowrap;
-        background-color: rgba(255, 255, 255, 0); 
-        border: 1px solid rgba(40, 38, 38, 0.085); 
-      }
-      
-      .schedule-button-style::-webkit-scrollbar {
-        display: none;
-      }
-      
-      .schedule-button-style {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-      }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
 
-      .navbar-collapse {
-        background-color: black;
-      }
+  .navbar-collapse {
+    background-color: black !important;
+    z-index: 1050;
+  }
+}
 
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
-      }
-
-      
-      .navbar-collapse{
-        background-color: black !important;
-        z-index: 1050;
-       }
-    }
-  
-
-   /* Footer */
+/* Footer */
 
 @media (max-width: 900px) {
   .footer-first {
@@ -344,4 +341,8 @@ footer span {
   background-color: #535354;
   border-radius: 50%;
   padding: 10px;
+}
+
+.social-media i:hover {
+  background-color: #535354;
 }
