@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body, html {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* nav bar */
+
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  font-size: 16px;
+  color: yellow;
+  font-weight: 700;
+  padding: 8px;
+  margin: 0;
+}
+.nav-link:hover {
+  color: yellow !important;
+}
+.container-fluid {
+  height: 60px;
+}
+.container-fluid {
+  background-color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.btn {
+  border: none;
+  background-color: #3d4549;
+  color: white;
+  margin: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-second {
+  background-color: #f9fafa;
+  color: black;
+}
+.img {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1…51043000/fill/none/top/none/49/668/374/webp/image');
+}
+.main-login {
+  color: white;
+  text-decoration: none;
+}
+.main-signup {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 996px) {
+.banner-image-text {
+  z-index: 10;
+}
+#navbarSupportedContent {
+  background-color: black;
+  margin: 0;
+  padding: 20px;
+  z-index: 3;
+  
+}
+.btn-outline-success { 
+  display: none; /* signup 버튼 안보이게함함 */
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+}
+.login-no {
+  display: block;
+}
+}
+
+
+
+/* main news */
+
+
+.main-news-box {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.headline-news-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1012px;
+    position: relative;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+
+.headline-news {
+    cursor: pointer;
+    width: 100%;
+    max-width: 1012px;
+    height: 440px;
+    min-height: 440px;
+    background-image: url(https://images.daznservices.com/di/library/DAZN_News_Dev/5a/1f/manchester-united-v-tottenham-hotspur-premier-league-old-trafford_2.77641244.jpg?t=2031236308&amp;w=800&amp;quality=100&quot);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.headline-news a {
+    text-decoration: none;
+}
+
+.headline-news-title {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    height: 150px;
+    color: white; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.headline-news-title span {
+    font-size: 14px;
+
+}
+
+.headline-news-title h2 {
+    font-size: 24px; 
+    font-weight: 700; 
+    color: #f9fafa;
+    
+}
+
+
+.news-info span {
+    margin-right: 5px;
+    color: #ced0d2;
+    font-size: 14px; 
+    font-weight: 200;
+
+}
+
+
+
+/* sub news  */
+
+.subheadline-news-items a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.subheadline-news-items {
+    display: flex; 
+    border-bottom: 1px solid rgb(61, 69, 73);
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 1012px;
+    box-sizing: border-box;
+    margin: 30px auto 30px;
+    
+}
+
+.subheadline-news-img {
+    margin-right: 10px;
+    width: 40%;
+    min-width: 220px; 
+}
+
+.subheadline-news-items img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    
+}
+
+.subheadline-news-title {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    
+    
+}
+
+.subheadline-news-title span {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+
+.subheadline-news-title h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+}
+
+/* media for news  */
+
+
+@media (max-width: 600px) {
+    .headline-news-title h2 {
+        font-size: 18px; 
+        font-weight: 700; 
+        
+    }
+    .subheadline-news-title h2 {
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+
+}
+
+@media (max-width: 500px) {
+   
+    .subheadline-news-items {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .subheadline-news-img {
+      flex: 0 0 auto;
+      width: 80%;
+}
+    }
+  
+    .subheadline-news-title {
+      padding: 20px;
+      
+       
+
+    }
+  
+    .subheadline-news-title h2 {
+      font-size: 16px;
+    }
+  
+  
+  @media (max-width: 480px) {
+    .subheadline-news-img {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  
+    .subheadline-news-title h2 {
+      font-size: 14px;
+    }
+  }
+
+@media (max-width: 350px) {
+    .subheadline-news-items {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+
+}
+
+@media (max-width: 265px) {
+    
+    .headline-news-title h2 {
+        font-size: 14px; 
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;   
+    }
+
+
+}
+
+
+/* footer */
+
+
+@media (max-width: 900px) {
+    .footer-first {
+      justify-content: space-between !important;
+    }
+    .mid {
+      display: none;
+    }
+  }
+  .list-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-second li {
+    padding: 10px;
+  }
+  .footer-second li:hover {
+    text-decoration: underline;
+  }
+  .dropdown-toggle {
+    padding-bottom: 10px;
+  }
+  .footer-first {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-second {
+    display: space-between;
+  }
+  
+  .footer-third {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.362);
+  }
+  
+  footer span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .dropdown-toggle {
+    background-color: black;
+  }
+  .list-inline-item a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-first .dropup .btn-secondary {
+    position: relative;
+    top: -7px;
+    left: -5px;
+  }
+  
+  .dropdown-menu {
+    background-color: rgb(20, 20, 20) !important;
+  }
+  
+  .dropdown-item {
+    color: rgba(255, 255, 255, 0.761) !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(43, 42, 42, 0.723) !important;
+    color: rgba(255, 255, 255, 0.761) !important;
+  }
+  
+  .btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .footer-first1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-first1 i {
+    padding-right: 8px;
+    padding-top: 3px;
+  }
+  .social-media {
+    color: white;
+  }
+  .social-media i {
+    padding-right: 8px;
+    padding: 10px;
+  }
+  
+  .social-media i:hover {
+    background-color: #535354;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* New footer */
+  
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #a12bc5, #4a82ff);
+    color: white;
+    padding: 20px 30px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .signup-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    right: 60px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .signup-btn:hover {
+    transform: scale(1.1);
+    background-color: #f2f2f2;
+  }
+  
+  .hidden {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  
+  .visible {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  
+  .close-btn {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+  }
+  
+  .close-btn-area {
+    /* padding: 0px 5px; */
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-btn {
+      display: none;
+    }
+  }
