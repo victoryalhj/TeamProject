@@ -18,16 +18,24 @@ form {
     margin-bottom: 30px;
 }
 .main-nav {
-   
     padding: 12px;
     width: 100%;
     height: 56px;
+    display: flex;
 }
 
-.logo {
-    width: 40px;
-    height: auto;
+.main-nav a {
+    text-decoration: none;
 }
+
+.navbar-brand {
+    font-size: 16px;
+    color: yellow;
+    font-weight: 700;
+    padding: 8px;
+    margin: 0;
+}
+
 
 .line {
     background: linear-gradient(90deg, rgba(247, 255, 26, .3), #f7ff1a 48.74%, rgba(247, 255, 26, .3));
