@@ -1,0 +1,145 @@
+/* Navbar */
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  font-size: 16px;
+  color: yellow;
+  font-weight: 700;
+  padding: 8px;
+  margin: 0;
+}
+.nav-link:hover {
+  color: yellow !important;
+}
+.container-fluid {
+  height: 60px;
+}
+.container-fluid {
+  background-color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.navbar-brand {
+  color: yellow !important;
+}
+
+.btn {
+  border: none;
+  background-color: #3d4549;
+  color: white;
+  margin: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-second {
+  background-color: #f9fafa;
+  color: black;
+}
+.img {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1…51043000/fill/none/top/none/49/668/374/webp/image');
+}
+
+.navbar-brand {
+  color: yellow !important;
+}
+
+.main-login {
+  color: white;
+  text-decoration: none;
+}
+.main-signup {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
+  .carousel-item .main-item .active {
+    height: 1rem;
+  }
+  .first-section {
+    display: none;
+  }
+  .promotion-text-title-bold {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+  #navbarSupportedContent {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .btn-outline-success {
+    display: none;
+  }
+  .promotion-text {
+    margin-left: 5rem;
+  }
+  button.carousel-control-prev,
+  button.carousel-control-next {
+    height: 250px;
+  }
+  .banner-image-text {
+    z-index: 10;
+  }
+  .login-no {
+    display: block;
+  }
+}
+
+@media (max-width: 996px) {
+  .first-section {
+    display: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
+  .carousel-item .main-item .active {
+    height: 1rem;
+  }
+  .first-section {
+    display: none;
+  }
+  .carousel-caption {
+    display: block !important; /* 강제로 보이게 설정 */
+  }
+  .banner-image-text {
+    z-index: 10;
+  }
+  #navbarSupportedContent {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .btn-outline-success {
+    display: none; /* signup 버튼 안보이게함함 */
+  }
+  .login-no {
+    display: block;
+  }
+}
+
+.main-login-btn1:hover {
+  background-color: rgba(255, 255, 255, 0.124) !important;
+}
+.main-login-btn2:hover {
+  background-color: rgba(255, 255, 255, 0.533) !important;
+}
+
+.main-item button:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 1000px) {
+  .login-no {
+    display: none;
+  }
+}
