@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+form {
+    margin-bottom: 30px;
+}
+.main-nav {
+    padding: 12px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    color: yellow;
+    font-weight: 700;
+    padding: 8px;
+    margin: 0;
+}
+
+
+.line {
+    background: linear-gradient(90deg, rgba(247, 255, 26, .3), #f7ff1a 48.74%, rgba(247, 255, 26, .3));
+    height: 2px;
+}
+
+.main-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 520px;
+    padding: 0 24px;
+    margin: 0 auto;
+    flex: 1;
+    
+}
+
+    
+.headline-box {
+    margin: 0 auto 24px;
+}
+
+.main-headline {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 48px auto 24px;
+}
+
+.user-slot-box {
+    border: 1px solid rgb(109, 115, 119);
+    border-radius: 4px;
+    height: 60px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.user-slot {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-image: initial;
+    border-radius: 0px;
+    outline: 0px;
+    background: none;
+    width: 100%;
+    margin: 14px 0 8px;
+    color:  white;
+    padding: 14px 16px; 
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+
+.user-button {
+    background-color: white;
+    width: 100%;
+    min-height: 52px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    border: none;
+    font-weight: 800;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user-button:hover{
+    opacity: 0.9;;
+} 
+
+.user-password {
+    text-align: center;
+    padding-top: 42px;
+}
+
+.user-password a {
+    color: rgb(249, 250, 250);
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.form-check-input {
+    appearance: none;
+    width: 20px;
+    height: auto;
+    min-width: 12px;
+    min-height: 12px;   
+    border: 1px solid white;
+    background-color: black;
+    cursor: pointer;
+    position: relative; 
+    transition: all 0.3 ease;
+
+}
+
+.form-check-input:checked {
+    background-color: white;
+    border-color: black;
+}
+
+.checkbox-slot {
+    color: #9ea2a4;
+    font-size: 12px;   
+}
+
+.checkbox-slot a {
+    text-decoration: underline;
+    color: #9ea2a4;
+    
+
+}

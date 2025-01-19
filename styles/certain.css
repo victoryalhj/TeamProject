@@ -1,0 +1,503 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+
+  margin-right:0px !important;
+  object-fit: cover;
+  /* 비율 유지하며 요소 채움 */
+  object-position: center;
+
+}
+
+
+.carousel-item img {
+  width: 100vw;
+  /* 화면 너비 */
+  height: 100vh;
+  object-fit: cover;
+  /* 비율 유지하며 요소 채움 */
+  object-position: center;
+  /*이미지 중앙 정렬*/
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  padding-left: 15%;
+}
+
+.text-content {
+  display: block; /* 항상 표시되도록 설정 */
+}
+
+.text-content button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color:black;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px 0;
+  color:black;
+}
+
+.text-content button:hover {
+  background-color: grey;
+}
+
+
+
+/*가운데 버튼*/
+.custom_btn {
+  background-color: #333331;
+  border: #333331 1px solid;
+  height: 3.5rem;
+  width: 15rem;
+  margin:1.5rem;
+  
+}
+
+.custom_btn a {
+  color:white;
+   text-decoration: none;
+   letter-spacing: 0.02rem;
+   font-size: 150%;
+}
+
+
+
+/*가운데 인터뷰*/
+.interview_image{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+.interview_custom{
+  background-color: black;
+  color: white;
+  aspect-ratio: 16/9;
+}
+
+ @media (min-width: 1700px){
+  .interview_custom{
+    background-color: black;
+    color: white;
+    aspect-ratio: 16/9;
+    margin-left: -10rem;
+  }  
+} 
+
+
+.interview_custom_text{
+  background-color: black;
+  color: white;
+  text-align: left;
+  aspect-ratio: 16/9;
+}
+
+.interview_custom_btn{
+  background-color: white;
+  color: black;
+  margin-bottom: 3rem;
+  width: 12rem;
+  height: 4rem;
+}
+
+.interview_custom_btn:hover{
+  background-color: grey;
+  margin-top:1.5rem;
+}
+
+#videoContainer, #videoContainer2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* 배경을 어두운 색으로 설정 */
+  display: none;
+  z-index: 9999; /* 화면 위에 표시되도록 설정 */
+}
+
+
+
+/*카드 이미지들*/
+.card-img-top {
+  width: 100%;
+  /* 카드 너비에 맞춤 */
+  aspect-ratio: 16 / 9;
+  /* 가로:세로 비율 유지 */
+ 
+  object-fit: cover;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* 이미지 비율 유지하며 잘 맞추기 */
+  border-radius: 10%;
+}
+
+.card {
+  height: 100%;
+  /* 카드가 내용물에 따라 높이를 자동 조정 */
+
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.custom_comingup{
+  margin-left: 2rem;
+}
+@media screen and max-width(560px) {
+  .custom_comingup{
+    margin-right: 2rem;
+  }
+}
+
+
+
+/*새로운 네브바*/
+/* Navbar */
+.custom_sign_up{
+  color: white;
+  text-decoration: none;
+}
+
+ .login-no {
+ display: none;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  font-size: 1.2rem;
+  color: yellow;
+  font-weight: 700;
+  padding: 8px;
+  margin: 0;
+}
+.nav-link:hover {
+  color: yellow !important;
+}
+
+.container-fluid {
+  background-color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.btn {
+  border: none;
+  background-color: #3d4549;
+  color: white;
+  margin: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-second {
+  background-color: #f9fafa;
+  color: black;
+}
+.img {
+  background-image: url('https://image.discovery.indazn.com/jp/v3/jp/none/1…51043000/fill/none/top/none/49/668/374/webp/image');
+}
+.main-login {
+  color: white;
+  text-decoration: none;
+}
+.main-signup {
+  color: black;
+  text-decoration: none;
+}  
+
+
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
+  .carousel-item .main-item .active {
+    height: 1rem;
+  }
+  .first-section {
+    display: none;
+  }
+  .promotion-text-title-bold{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+  #navbarSupportedContent {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .btn-outline-success {
+    display: none;
+  }
+  .promotion-text {
+    margin-left: 5rem;
+  }
+  button.carousel-control-prev,
+  button.carousel-control-next {
+    height: 250px;
+  }
+  .banner-image-text {
+    z-index: 10;
+  }
+  .login-no {
+    display: block;
+  }
+}
+
+@media (max-width: 996px) {
+  .first-section {
+    display: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* 화이트 아이콘 */
+  }
+  .carousel-item .main-item .active {
+    height: 1rem;
+  }
+  .first-section {
+    display: none;
+  }
+  .carousel-caption {
+    display: block !important; /* 강제로 보이게 설정 */
+  }
+  .banner-image-text {
+    z-index: 10;
+  }
+  #navbarSupportedContent {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .btn-outline-success { 
+    display: none; /* signup 버튼 안보이게함함 */
+  }
+  .login-no {
+    display: block;
+  }
+}
+
+
+/* Navbar */
+/* .navbar {
+  padding: 0;
+  display: fixed;
+}
+.container-fluid {
+  background-color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.btn {
+  border: none;
+  background-color: #3D4549;
+  color: white;
+  margin: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-second {
+  background-color: #f9fafa;
+  color: black;
+}
+
+.custom_below_interview{
+  margin-left:5rem;
+  margin-right:4rem;
+} */
+
+/* Footer */
+
+@media (max-width: 900px) {
+  .footer-first {
+    justify-content: space-between !important;
+  }
+  .mid {
+    display: none;
+  }
+}
+.list-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-second li {
+  padding: 10px;
+}
+.footer-second li:hover {
+  text-decoration: underline;
+}
+.dropdown-toggle {
+  padding-bottom: 10px;
+}
+.footer-first {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-second {
+  display: space-between;
+}
+
+.footer-third {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.362);
+}
+
+footer span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown-toggle {
+  background-color: black;
+}
+.list-inline-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-first .dropup .btn-secondary {
+  position: relative;
+  top: -7px;
+  left: -5px;
+}
+
+.dropdown-menu {
+  background-color: rgb(20, 20, 20) !important;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.761) !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(43, 42, 42, 0.723) !important;
+  color: rgba(255, 255, 255, 0.761) !important;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer-first1 {
+  display: flex;
+  flex-direction: row;
+}
+.footer-first1 i {
+  padding-right: 8px;
+  padding-top: 3px;
+}
+.social-media {
+  color: white;
+}
+.social-media i {
+  padding-right: 8px;
+  padding: 10px;
+}
+
+.social-media i:hover {
+  background-color: #535354;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* New footer */
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #a12bc5, #4a82ff);
+  color: white;
+  padding: 20px 30px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  right: 60px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.signup-btn:hover {
+  transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.visible {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.close-btn-area {
+  /* padding: 0px 5px; */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .signup-btn {
+    display: none;
+  }
+} 
